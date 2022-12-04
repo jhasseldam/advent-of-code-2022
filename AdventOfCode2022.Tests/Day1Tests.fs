@@ -1,4 +1,4 @@
-module Tests
+module AdventOfCode2022.Tests.Day1Tests
 
 open System.IO
 open Xunit
