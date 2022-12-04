@@ -11,6 +11,7 @@
     <Compile Include="Day1Tests.fs" />
     <Compile Include="Day2Part1Tests.fs" />
     <Compile Include="Day2Part2Tests.fs" />
+    <Compile Include="Day3Tests.fs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,10 +35,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode2022\AdventOfCode2022.fsproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="TestData\Day2" />
   </ItemGroup>
 
 </Project>
