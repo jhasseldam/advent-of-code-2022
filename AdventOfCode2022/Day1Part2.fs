@@ -3,6 +3,7 @@ namespace AdventOfCode2022.Day1
 open System
 
 module ElfCaloriesPart2 =
+    
     let topThreeCaloriesSum itemsList =
         itemsList
         |> ElfCaloriesPart1.splitOnEmptyLine
@@ -12,5 +13,5 @@ module ElfCaloriesPart2 =
         |> Array.sum
 
     let prettyPrint sum =
-        printfn $"The sum of calories carried by the top three elves carries are : {sum}"
+        printfn $"The sum of calories carried by the top three elves are : {sum}"
         
