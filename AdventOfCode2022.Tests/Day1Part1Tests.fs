@@ -22,7 +22,7 @@ let ``Correctly split input on empty line`` () =
             "10000"
         |]
         
-    ElfCalories.splitOnEmptyLine given |> (=) expected
+    ElfCaloriesPart1.splitOnEmptyLine given |> (=) expected
     
 [<Fact>]
 let ``Correctly split input on newline with multiple values`` () =
@@ -33,7 +33,7 @@ let ``Correctly split input on newline with multiple values`` () =
     
     let expected = [|"7000"; "8000"; "9000"|]
 
-    ElfCalories.splitOnNewLine given |> (=) expected
+    ElfCaloriesPart1.splitOnNewLine given |> (=) expected
     
 [<Fact>]
 let ``Correctly split input on newline with single value`` () =
@@ -41,7 +41,7 @@ let ``Correctly split input on newline with single value`` () =
     
     let expected = [|"7000"|]
 
-    ElfCalories.splitOnNewLine given |> (=) expected
+    ElfCaloriesPart1.splitOnNewLine given |> (=) expected
     
 [<Fact>]
 let ``Correctly identify the highest sum of calories among elves`` () =
@@ -49,4 +49,4 @@ let ``Correctly identify the highest sum of calories among elves`` () =
     
     let expected = 24000
     
-    ElfCalories.findMaxCaloriesAmongElves given |> (=) expected
+    ElfCaloriesPart1.findMaxCaloriesAmongElves given |> (=) expected

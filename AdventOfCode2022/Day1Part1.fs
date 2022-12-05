@@ -2,7 +2,7 @@ namespace AdventOfCode2022.Day1
 
 open System
 
-module ElfCalories =
+module ElfCaloriesPart1 =
     
     let splitOnEmptyLine (input : string) =
         input.Split([|Environment.NewLine + Environment.NewLine|] , StringSplitOptions.RemoveEmptyEntries)

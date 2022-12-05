@@ -10,12 +10,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Day1.fs" />
+    <Compile Include="Day1Part1.fs" />
+    <Compile Include="Day1Part2.fs" />
     <Compile Include="Day2Part1.fs" />
     <Compile Include="Day2Part2.fs" />
     <Compile Include="Day3Part1.fs" />
-    <Compile Include="Program.fs" />
     <Compile Include="Day3Part2.fs" />
+    <Compile Include="Day4Part1.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
 
 </Project>
