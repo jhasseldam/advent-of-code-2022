@@ -4,6 +4,7 @@ open AdventOfCode2022.Day1
 open AdventOfCode2022.Day2
 open AdventOfCode2022.Day3
 open AdventOfCode2022.Day4
+open AdventOfCode2022.Day5
 
 [<EntryPoint>]
 let main args =
@@ -21,5 +22,9 @@ let main args =
     printfn "#### DAY 3 part 2"
     File.ReadAllText "PuzzleInput/day3.txt" |> RucksackOrganizationPart2.sumOfBadgeItemPriorities |> RucksackOrganizationPart2.prettyPrint
     printfn "#### DAY 4 part 1"
-    File.ReadAllText "PuzzleInput/day4.txt" |> CampCleanupPart1.findOverlappingAssignmentPairsSum |> CampCleanupPart1.prettyPrint
+    File.ReadAllText "PuzzleInput/day4.txt" |> CampCleanupPart1.findCompleteOverlappingAssignmentPairsSum |> CampCleanupPart1.prettyPrint
+    printfn "#### DAY 4 part 2"
+    File.ReadAllText "PuzzleInput/day4.txt" |> CampCleanupPart2.findAnyOverlappingAssigmentPairsSum |> CampCleanupPart2.prettyPrint
+    printfn "#### DAY 5 part 1"
+    File.ReadAllText "PuzzleInput/day5.txt" |> SupplyStacks.rearrangeCargo |> SupplyStacks.prettyPrint
     0

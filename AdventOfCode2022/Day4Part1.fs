@@ -14,21 +14,21 @@ module CampCleanupPart1 =
         |> Array.map createCollectionFromAssignmentRange
         |> fun ranges -> ranges[0], ranges[1]
         
-    let oneRangeContainsTheOther (range1, range2) =
+    let completeRangeOverlap (range1, range2) =
         let set1 = Set.ofList range1 
         let set2 = Set.ofList range2
         Set.isSubset set1 set2 ||
         Set.isSubset set2 set1
         
-    let findOverlappingAssignmentPairsSum (assignmentPairsList : string) =
+    let findCompleteOverlappingAssignmentPairsSum (assignmentPairsList : string) =
         assignmentPairsList.Split(Environment.NewLine)
         |> Array.map createCollectionsFromAssignmentPair
-        |> Array.map oneRangeContainsTheOther
+        |> Array.map completeRangeOverlap
         |> Array.filter id
         |> Array.length
         
     let prettyPrint sum =
-        printfn $"{sum} elves had assigment lists which were overlapping"
+        printfn $"{sum} elves had assigment lists which were completely overlapping"
         
         
    
